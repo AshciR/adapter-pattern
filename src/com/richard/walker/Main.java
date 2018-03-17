@@ -6,7 +6,7 @@ public class Main {
 
         // We got an European outlet that provides 220 V
         EuropeanOutlet britishOutlet = new BritishOutlet();
-        NorthAmericanAdapter northAmericanAdapter = new NorthAmericanAdapter(britishOutlet);
+        NorthAmericanOutlet northAmericanAdapter = new NorthAmericanAdapter(britishOutlet);
 
         // Provides 110V, but we need to use an adapter to do it
         provideNorthAmericanElectricity(northAmericanAdapter);
