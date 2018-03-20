@@ -8,12 +8,14 @@ fun main(args: Array<String>) {
 
 }
 
-private fun provideNorthAmericanElectricity(northAmericanOutlet: NorthAmericanOutlet) {
-    if (northAmericanOutlet.isFunctioning()) {
-        northAmericanOutlet.provide110Volts()
-        println("Providing North American Electricity")
-    } else {
-        println("I don't have the power!")
-    }
+private fun provideNorthAmericanElectricity(northAmericanOutlet: NorthAmericanOutlet) =
+        when (northAmericanOutlet.isFunctioning()) {
+            true -> {
+                northAmericanOutlet.provide110Volts()
+                println("Providing North American Electricity")
+            }
+            false -> {
+                println("I don't have the power!")
+            }
+        }
 
-}

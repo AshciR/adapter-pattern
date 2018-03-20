@@ -1,6 +1,6 @@
 package com.richard.walker.outlets.kotlin
 
-class NorthAmericanAdapter(private val europeanOutlet: EuropeanOutlet): NorthAmericanOutlet {
+class NorthAmericanAdapter(private val europeanOutlet: EuropeanOutlet) : NorthAmericanOutlet {
 
     override fun provide110Volts(): Double {
         println("I converted from  ${europeanOutlet.provide220Volts()}V to 110V.")
@@ -8,7 +8,5 @@ class NorthAmericanAdapter(private val europeanOutlet: EuropeanOutlet): NorthAme
         return europeanOutlet.provide220Volts() / 2
     }
 
-    override fun isFunctioning(): Boolean {
-        return europeanOutlet.isFunctioning()
-    }
+    override fun isFunctioning(): Boolean = europeanOutlet.isFunctioning()
 }
