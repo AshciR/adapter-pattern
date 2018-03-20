@@ -1,4 +1,4 @@
-package com.richard.walker;
+package com.richard.walker.outlets.java;
 
 public class JamaicanOutlet implements NorthAmericanOutlet{
     private static final double WORKING_VOLTAGE = 110.00;
