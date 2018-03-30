@@ -9,6 +9,10 @@ public class Main {
     public static void main(String[] args) {
         NoaaRegionalWeather noaaRegionalWeather = new NoaaRegionalWeatherImpl();
 
+        printWeatherStationData(noaaRegionalWeather);
+    }
+
+    private static void printWeatherStationData(NoaaRegionalWeather noaaRegionalWeather) {
         System.out.printf("%20s | %6s | %7s | %8s\n", "City", "Temp", "Wind", "Humidity");
         for (WeatherStation station: noaaRegionalWeather.getWeatherStations()) {
 
