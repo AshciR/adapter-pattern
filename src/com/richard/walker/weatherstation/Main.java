@@ -1,10 +1,7 @@
 package com.richard.walker.weatherstation;
 
 import com.richard.walker.weatherstation.domain.WeatherStation;
-import com.richard.walker.weatherstation.vendor.NoaaRegionalWeather;
-import com.richard.walker.weatherstation.vendor.NoaaRegionalWeatherImpl;
-import com.richard.walker.weatherstation.vendor.StandardRegionalWeather;
-import com.richard.walker.weatherstation.vendor.StandardRegionalWeatherImpl;
+import com.richard.walker.weatherstation.vendor.*;
 
 import java.util.List;
 
@@ -14,8 +11,10 @@ public class Main {
         StandardRegionalWeather regionalWeather = new StandardRegionalWeatherImpl();
         NoaaRegionalWeather noaaRegionalWeather = new NoaaRegionalWeatherImpl();
 
+        StandardRegionalWeatherAdapter regionalWeatherAdapter = new StandardRegionalWeatherAdapter(noaaRegionalWeather);
 
         printWeatherStationData(regionalWeather.getWeatherStations());
+        printWeatherStationData(regionalWeatherAdapter.getWeatherStations());
     }
 
     private static void printWeatherStationData(List<WeatherStation> weatherStations) {
