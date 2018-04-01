@@ -11,7 +11,6 @@ public class NoaaRegionalWeatherImpl implements NoaaRegionalWeather {
         this.weatherStations = WeatherGenerator.generateMockWeatherData();
     }
 
-
     @Override
     public WeatherStation[] getWeatherStations() {
         return this.weatherStations;

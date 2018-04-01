@@ -21,36 +21,24 @@ public class WeatherStation {
 
     }
 
-    public void setTemperature(int temperature) {
-        this.temperature = temperature;
-    }
-
-    public void setWindSpeed(int windSpeed) {
-        this.windSpeed = windSpeed;
-    }
-
-    public void setHumidity(int humidity) {
-        this.humidity = humidity;
-    }
-
 
     public int getTemperature() {
-        return 0;
+        return temperature;
     }
 
 
     public int getWindSpeed() {
-        return 0;
+        return windSpeed;
     }
 
 
     public int getHumidity() {
-        return 0;
+        return humidity;
     }
 
 
     public String getCity() {
-        return null;
+        return city;
     }
 
     @Override
