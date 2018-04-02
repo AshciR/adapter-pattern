@@ -1,6 +1,5 @@
 package com.richard.walker.weatherstation.utilities;
 
-import com.richard.walker.weatherstation.constants.Cities;
 import com.richard.walker.weatherstation.domain.WeatherStation;
 
 import java.util.concurrent.ThreadLocalRandom;
