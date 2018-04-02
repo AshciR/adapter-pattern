@@ -8,11 +8,11 @@ import java.util.concurrent.ThreadLocalRandom;
 public final class WeatherGenerator {
     private static final int MAX_TEMP = 110;
     private static final int MIN_TEMP = 20;
-    private static final int MAX_WIND_SPEED = 50;
+    private static final int MAX_WIND_SPEED = 30;
     private static final int MAX_HUMIDITY = 100;
 
-    public static WeatherStation[] generateMockWeatherData() {
-        int numCities = Cities.EAST_COAST_CITIES.length;
+    public static WeatherStation[] generateWeatherDataFor(String[] cities) {
+        int numCities = cities.length;
 
         WeatherStation[] weatherStations = new WeatherStation[numCities];
         ThreadLocalRandom rand = ThreadLocalRandom.current();
@@ -21,7 +21,7 @@ public final class WeatherGenerator {
             int temp = rand.nextInt(MIN_TEMP, MAX_TEMP);
             int windSpeed = rand.nextInt(MAX_WIND_SPEED);
             int humidity = rand.nextInt(MAX_HUMIDITY);
-            String city = Cities.EAST_COAST_CITIES[i];
+            String city = cities[i];
 
             WeatherStation station = new WeatherStation(temp, windSpeed, humidity, city);
             weatherStations[i] = station;
