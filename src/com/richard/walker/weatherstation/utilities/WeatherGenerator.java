@@ -10,10 +10,13 @@ public final class WeatherGenerator {
     private static final int MAX_WIND_SPEED = 30;
     private static final int MAX_HUMIDITY = 100;
 
+    private WeatherGenerator(){}
+
     public static WeatherStation[] generateWeatherDataFor(String[] cities) {
         int numCities = cities.length;
 
         WeatherStation[] weatherStations = new WeatherStation[numCities];
+
         ThreadLocalRandom rand = ThreadLocalRandom.current();
 
         for (int i = 0; i < numCities; i++) {
@@ -29,7 +32,4 @@ public final class WeatherGenerator {
         return weatherStations;
     }
 
-    public WeatherGenerator() {
-        throw new UnsupportedOperationException("Constructor not implemented");
-    }
 }

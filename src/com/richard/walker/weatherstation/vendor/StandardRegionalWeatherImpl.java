@@ -8,7 +8,7 @@ import java.util.List;
 
 import static com.richard.walker.weatherstation.constants.Cities.EAST_COAST_CITIES;
 
-public class StandardRegionalWeatherImpl  implements StandardRegionalWeather {
+public class StandardRegionalWeatherImpl implements StandardRegionalWeather {
 
     @Override
     public List<WeatherStation> getWeatherStations() {

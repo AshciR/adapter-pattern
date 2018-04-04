@@ -1,6 +1,8 @@
 package com.richard.walker.weatherstation.constants;
 
 public final class Cities {
+    private Cities(){}
+
     public final static String[] EAST_COAST_CITIES = new String[]{
             "Raleigh",
             "Durham",
@@ -25,8 +27,4 @@ public final class Cities {
             "Olympia",
             "Spokane"
     };
-
-    public Cities() {
-        throw new UnsupportedOperationException("Constructor not implemented");
-    }
 }

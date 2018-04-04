@@ -11,7 +11,7 @@ public class Main {
         StandardRegionalWeather regionalWeather = new StandardRegionalWeatherImpl();
         NoaaRegionalWeather noaaRegionalWeather = new NoaaRegionalWeatherImpl();
 
-        StandardRegionalWeatherAdapter regionalWeatherAdapter = new StandardRegionalWeatherAdapter(noaaRegionalWeather);
+        StandardRegionalWeather regionalWeatherAdapter = new StandardRegionalWeatherAdapter(noaaRegionalWeather);
 
         printWeatherStationData(regionalWeather.getWeatherStations());
         printWeatherStationData(regionalWeatherAdapter.getWeatherStations());
