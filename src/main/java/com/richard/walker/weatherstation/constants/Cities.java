@@ -1,4 +1,4 @@
-package com.richard.walker.weatherstation.constants;
+package weatherstation.constants;
 
 public final class Cities {
     private Cities(){}

@@ -1,4 +1,4 @@
-package com.richard.walker.weatherstation.domain;
+package weatherstation.domain;
 
 public class WeatherStation {
     private int temperature;

@@ -1,4 +1,4 @@
-package com.richard.walker.weatherstation;
+package weatherstation;
 
 import com.richard.walker.weatherstation.domain.WeatherStation;
 import com.richard.walker.weatherstation.vendor.*;

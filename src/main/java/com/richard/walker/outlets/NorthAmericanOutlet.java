@@ -1,4 +1,4 @@
-package com.richard.walker.outlets.java;
+package outlets.java;
 
 public interface NorthAmericanOutlet{
     Double provide110Volts();
