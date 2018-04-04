@@ -1,7 +1,12 @@
-package weatherstation;
+package com.richard.walker.weatherstation;
+
 
 import com.richard.walker.weatherstation.domain.WeatherStation;
-import com.richard.walker.weatherstation.vendor.*;
+import com.richard.walker.weatherstation.vendor.NoaaRegionalWeather;
+import com.richard.walker.weatherstation.vendor.NoaaRegionalWeatherImpl;
+import com.richard.walker.weatherstation.vendor.StandardRegionalWeather;
+import com.richard.walker.weatherstation.vendor.StandardRegionalWeatherAdapter;
+import com.richard.walker.weatherstation.vendor.StandardRegionalWeatherImpl;
 
 import java.util.List;
 

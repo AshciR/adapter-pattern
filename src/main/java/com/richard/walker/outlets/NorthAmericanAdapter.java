@@ -1,4 +1,4 @@
-package outlets.java;
+package com.richard.walker.outlets;
 
 public class NorthAmericanAdapter implements NorthAmericanOutlet{
 

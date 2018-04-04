@@ -1,4 +1,9 @@
-package com.richard.walker.outlets.kotlin
+package com.richard.walker
+
+import com.richard.walker.outlets.kotlin.BritishOutlet
+import com.richard.walker.outlets.kotlin.EuropeanOutlet
+import com.richard.walker.outlets.kotlin.NorthAmericanAdapter
+import com.richard.walker.outlets.kotlin.NorthAmericanOutlet
 
 fun main(args: Array<String>) {
     val britishOutlet: EuropeanOutlet = BritishOutlet()

@@ -1,9 +1,9 @@
-package weatherstation.vendor;
+package com.richard.walker.weatherstation.vendor;
 
 import com.richard.walker.weatherstation.domain.WeatherStation;
-import weatherstation.utilities.WeatherGenerator;
+import com.richard.walker.weatherstation.utilities.WeatherGenerator;
 
-import static weatherstation.constants.Cities.WEST_COAST_CITIES;
+import static com.richard.walker.weatherstation.constants.Cities.WEST_COAST_CITIES;
 
 public class NoaaRegionalWeatherImpl implements NoaaRegionalWeather {
     private WeatherStation[] weatherStations;

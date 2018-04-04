@@ -1,4 +1,4 @@
-package outlets.java;
+package com.richard.walker.outlets;
 
 public interface EuropeanOutlet{
     Double provide220Volts();

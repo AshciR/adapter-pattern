@@ -22,8 +22,6 @@
     </dependencies>
 
     <build>
-        <sourceDirectory>src/com/richard/walker</sourceDirectory>
-
         <plugins>
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
@@ -53,7 +51,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.richard.walker.outlets.java.Main</mainClass>
+                            <mainClass>com.richard.walker.outlets.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

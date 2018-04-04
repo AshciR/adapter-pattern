@@ -1,4 +1,4 @@
-package weatherstation.utilities;
+package com.richard.walker.weatherstation.utilities;
 
 import com.richard.walker.weatherstation.domain.WeatherStation;
 
