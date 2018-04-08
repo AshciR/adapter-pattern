@@ -2,23 +2,22 @@ package com.richard.walker.weatherstation;
 
 
 import com.richard.walker.weatherstation.domain.WeatherStation;
-import com.richard.walker.weatherstation.vendor.NoaaRegionalWeather;
-import com.richard.walker.weatherstation.vendor.NoaaRegionalWeatherImpl;
-import com.richard.walker.weatherstation.vendor.StandardRegionalWeather;
-import com.richard.walker.weatherstation.vendor.StandardRegionalWeatherAdapter;
-import com.richard.walker.weatherstation.vendor.StandardRegionalWeatherImpl;
+import com.richard.walker.weatherstation.vendor.*;
 
 import java.util.List;
+
+import static com.richard.walker.weatherstation.constants.Cities.EAST_COAST_CITIES;
+import static com.richard.walker.weatherstation.constants.Cities.WEST_COAST_CITIES;
 
 public class Main {
 
     public static void main(String[] args) {
-        StandardRegionalWeather regionalWeather = new StandardRegionalWeatherImpl();
-        NoaaRegionalWeather noaaRegionalWeather = new NoaaRegionalWeatherImpl();
+        StandardRegionalWeather eastCoastWeather = new StandardRegionalWeatherImpl(EAST_COAST_CITIES);
+        NoaaRegionalWeather westCoastWeather = new NoaaRegionalWeatherImpl(WEST_COAST_CITIES);
 
-        StandardRegionalWeather regionalWeatherAdapter = new StandardRegionalWeatherAdapter(noaaRegionalWeather);
+        StandardRegionalWeather regionalWeatherAdapter = new StandardRegionalWeatherAdapter(westCoastWeather);
 
-        printWeatherStationData(regionalWeather.getWeatherStations());
+        printWeatherStationData(eastCoastWeather.getWeatherStations());
         printWeatherStationData(regionalWeatherAdapter.getWeatherStations());
     }
 
