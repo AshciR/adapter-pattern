@@ -18,8 +18,8 @@ Remember we "can't" change the implementation of NooaRegionalWeather.
 (Imagine if the Nooa classes were contained in a .jar, for instance)
 
 ## Implement the solution
-There's a file named StandardRegionalWeatherAdapter.
+There's a file named _NoaaToStandardRegionalWeatherAdapter.java_. It is located in the _region_ package.
 
 The skeleton class is already created. You just have to implement the second method inside.
 
-If you get really stuck, take a look at StandardRegionalWeatherImpl.java.
+If you get really stuck, take a look at _StandardRegionalWeatherImpl.java_.
