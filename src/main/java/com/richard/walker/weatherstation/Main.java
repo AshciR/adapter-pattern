@@ -2,6 +2,9 @@ package com.richard.walker.weatherstation;
 
 
 import com.richard.walker.weatherstation.domain.WeatherStation;
+import com.richard.walker.weatherstation.region.NoaaToStandardRegionalWeatherAdapter;
+import com.richard.walker.weatherstation.region.StandardRegionalWeather;
+import com.richard.walker.weatherstation.region.StandardRegionalWeatherImpl;
 import com.richard.walker.weatherstation.vendor.*;
 
 import java.util.List;
@@ -15,7 +18,7 @@ public class Main {
         StandardRegionalWeather eastCoastWeather = new StandardRegionalWeatherImpl(EAST_COAST_CITIES);
         NoaaRegionalWeather westCoastWeather = new NoaaRegionalWeatherImpl(WEST_COAST_CITIES);
 
-        StandardRegionalWeather regionalWeatherAdapter = new StandardRegionalWeatherAdapter(westCoastWeather);
+        StandardRegionalWeather regionalWeatherAdapter = new NoaaToStandardRegionalWeatherAdapter(westCoastWeather);
 
         printWeatherStationData(eastCoastWeather.getWeatherStations());
         printWeatherStationData(regionalWeatherAdapter.getWeatherStations());
