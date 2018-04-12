@@ -1,11 +1,13 @@
-package com.richard.walker.weatherstation.vendor;
+package com.richard.walker.weatherstation.region;
 
 
 import com.richard.walker.weatherstation.domain.WeatherStation;
+import com.richard.walker.weatherstation.region.StandardRegionalWeather;
+import com.richard.walker.weatherstation.vendor.NoaaRegionalWeather;
 
 import java.util.List;
 
-public class StandardRegionalWeatherAdapter implements StandardRegionalWeather {
+public class NoaaToStandardRegionalWeatherAdapter implements StandardRegionalWeather {
 
     // The Noaa Weather that needs to be converted to a Standard Regional Weather
     private NoaaRegionalWeather noaaRegionalWeather;
@@ -13,7 +15,7 @@ public class StandardRegionalWeatherAdapter implements StandardRegionalWeather {
     // Note that the constructor takes a NoaaRegionalWeather Interface as a type
     // This is an example of using Dependency Injection b/c we provide the class
     // with all the dependencies that it needs.
-    public StandardRegionalWeatherAdapter(NoaaRegionalWeather noaaRegionalWeather) {
+    public NoaaToStandardRegionalWeatherAdapter(NoaaRegionalWeather noaaRegionalWeather) {
         this.noaaRegionalWeather = noaaRegionalWeather;
     }
 
