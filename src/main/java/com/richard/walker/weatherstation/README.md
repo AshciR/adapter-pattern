@@ -4,7 +4,7 @@ This program takes prints weather data from different regions.
 
 Each region is expected to have a List of Weather station objects.
 
-## The problem
+## The problem:
 The weather stations from a 3rd party vendor (the NOAA) are returned in an Array.
 
 Because of this, our program can't print that data.
@@ -17,9 +17,9 @@ Remember we "can't" change the implementation of NooaRegionalWeather.
 
 (Imagine if the Nooa classes were contained in a .jar, for instance)
 
-## Implement the solution
-There's a file named _NoaaToStandardRegionalWeatherAdapter.java_. It is located in the _region_ package.
+## Implement the solution:
+There's a file named ```NoaaToStandardRegionalWeatherAdapter.java```. It is located in the ```region``` package.
 
 The skeleton class is already created. You just have to implement the second method inside.
 
-If you get really stuck, take a look at _StandardRegionalWeatherImpl.java_.
+If you get really stuck, take a look at ```StandardRegionalWeatherImpl.java```.
