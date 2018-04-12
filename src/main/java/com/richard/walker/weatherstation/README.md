@@ -9,7 +9,7 @@ The weather stations from a 3rd party vendor (the NOAA) are returned in an Array
 
 Because of this, our program can't print that data.
 
-There are a couple ways we could account for the Array-List mismatch. 
+There are a couple ways we could account for the List <> Array mismatch. 
 
 The adapter pattern is the best way to go because we're dealing with a 3rd party vendor.
 
